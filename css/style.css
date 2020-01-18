@@ -1,0 +1,402 @@
+/* ###############
+Styling-Elements
+############### */
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+h2 {
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+h2,
+h3 {
+    color: #0489B1;
+}
+
+/* ###############
+Clearfix
+############### */
+
+.cf::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* ###############
+Pseudo-Elements
+############### */
+
+a:hover {
+    border-bottom: 1px solid #0489B1;
+}
+
+/* ###############
+Header-Styling
+############### */
+
+.main-header {
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0 auto;
+    background-color: #81F7D8;
+}
+
+.name {
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+.main-nav ul li {
+    margin-bottom: 5px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #fff;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.dev-img {
+    width: 75%;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+/* ###############
+Portfolio-Styling
+############### */
+
+.main-area {
+    background: linear-gradient(#81F7D8, #fff 5%);
+}
+
+#portfolio {
+    text-align: center;
+    padding-top: 60px;
+    font-family: 'Titillium Web', sans-serif;
+    margin-bottom: 40px;
+}
+
+#portfolio h2 {
+    padding: 0;
+}
+
+.article-img {
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    box-shadow: 5px 12px 37px -13px rgba(0,0,0,1);
+}
+
+.article-text {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* ###############
+Skills-Styling
+############### */
+
+#skills {
+    margin: 0 auto;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+    margin-top: 60px;
+    width: 90%
+}
+
+#skills p {
+    font-size: 1.4em;
+}
+
+#skills img {
+    width: 60%;
+    margin-bottom: 30px;
+}
+
+/* ###############
+Contact-Styling
+############### */
+
+.contact-container {
+    background-color: #F2F2F2;
+}
+
+#contact {
+    padding-top: 90px;
+    padding-bottom: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    border-bottom: 1px solid #BDBDBD;
+
+}
+
+#phone {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+
+#email {
+    margin-top: 0;
+}
+
+/* ###############
+Footer-Styling
+############### */
+
+.main-footer {
+    padding-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F2F2F2;
+}
+
+.footer-name {
+    float: left;
+    margin: 0;
+}
+
+.mobile-footer-nav {
+    float: right;
+    text-transform: uppercase;
+    font-size: .8em;
+}
+
+.large-footer-nav {
+    visibility: hidden;
+}
+
+/* ###############
+Media-Queries 768px
+############### */
+
+@media (min-width: 768px) {
+
+    .container {
+        max-width: 900px;
+    }
+
+    /* ###############
+    Header-Styling
+    ############### */
+
+    .main-header {
+        padding-top: 30px;
+    }
+
+    .main-nav ul {
+        padding-top: 15px;
+        padding-bottom: 40px;
+    }
+
+    .main-nav ul li {
+        display: inline-block;
+        margin-left: 15px;
+    }
+
+    .main-nav ul li a {
+        padding: 10px 20px;
+        background-color: #81F7D8;
+        font-size: 1.2em;
+        text-transform: uppercase;
+    }
+
+    .dev-img {
+        float: right;
+        width: 40%;
+        padding-left: 10px;
+    }
+
+    .dev-info {
+        float: left;
+        width: 60%;
+        margin-top: 30px;
+        font-size: 1.3em;
+        text-align: left;
+    }
+
+    /* ###############
+    Portfolio-Styling
+    ############### */
+
+    .col {
+        width: 50%;
+        margin-top: 30px;
+        height: auto;
+    }
+
+    .col h3 {
+        margin-top: 5%;
+        font-size: 1.1em;
+    }
+
+    .marketing-page,
+    .travel-app,
+    .photo-gallery {
+        float: left;
+    }
+
+    .search-page,
+    .favorite-spots,
+    .calculator {
+        float: right;
+    }
+
+    .article-img {
+        width: 90%;
+    }
+
+    .article-text {
+        font-size: 1.1em;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+    
+    /* ###############
+    Skills-Styling
+    ############### */
+
+    #skills p {
+        margin: 0 auto;
+        max-width: 400px;
+        padding-bottom: 30px;
+    }
+
+    #skills img {
+        max-width: 300px;
+        margin-bottom: 30px;
+    }
+
+    /* ###############
+    Contact-Styling
+    ############### */
+
+    #contact {
+        margin: 0 auto;
+        padding-top: 140px;
+        padding-bottom: 65px;
+        font-size: 22px;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+   #contact-text {
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    /* ###############
+    Footer-Styling
+    ############### */
+
+    .main-footer {
+        padding: 35px;
+    }
+
+    .mobile-footer-nav {
+        display: none;
+    }
+
+    .large-footer-nav {
+        visibility: visible;
+        float: right;
+    }
+
+    .large-footer-nav li {
+        float: left;
+        margin-left: 25px;
+        text-transform: uppercase;
+        font-size: .9em;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    /* ###############
+    Header-Styling
+    ############### */
+
+    .name {
+        float: left;
+        padding-top: 5px;
+    }
+
+    .main-nav ul {
+        float: right;
+        font-size: 0.8em;
+    }
+
+    .main-nav ul li {
+        margin-left: 5px;
+    }
+
+    .dev-img {
+        padding-left: 30px;
+        width: 30%;
+    }
+
+    .main-nav ul li a {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight: bold;
+    }
+
+    /* ###############
+    Portfolio-Styling
+    ############### */
+
+    .container {
+        max-width: 1300px;
+    }
+
+    .col {
+        width: 33.333%;
+    }
+
+    #portfolio {
+        padding-top: 100px;
+    }
+
+    .article-img {
+        width: 75%;
+    }
+
+    .article-text {
+        font-size: .95em;
+    }
+
+    /* ###############
+    Portfolio-Styling
+    ############### */
+
+    #contact {
+        padding-top: 40px;
+    }
+
+}
